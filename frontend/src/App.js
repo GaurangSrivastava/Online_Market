@@ -7,20 +7,21 @@ import Contact from "./Contact";
 import Cart from "./Cart";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Chatbot from "./components/Chatbot/Chatbot";
 import ErrorPage from "./ErrorPage";
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Profile from "./Profile";
 import Predict from "./Predict";
-import TermsAndConditions from "./components/TermsAndConditions";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import CheckOutPage from "./components/CheckOutPage";
+import TermsAndConditions from "./components/Footer/TermsAndConditions";
+import PrivacyPolicy from "./components/Footer/PrivacyPolicy";
+import CheckOutPage from "./components/Cart/CheckOutPage";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import PaymentSucess from "./components/PaymentSucess";
-import PaymentFailed from "./components/PaymentFailed";
+import PaymentSucess from "./components/Cart/PaymentSucess";
+import PaymentFailed from "./components/Cart/PaymentFailed";
 
 //public key:-
 const stripePromise = loadStripe('pk_test_51NoTO4SDUFtfqLpzNwaMYL90N08bYPiAGAWiCxBi0KfdpHOGNgEIQydC5d4CktCrSQGhSVE826URn6z9PpBxsTZq00NAHyNYId');
@@ -58,6 +59,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/chatbot" element={<Chatbot />}/>
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />

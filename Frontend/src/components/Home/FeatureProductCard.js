@@ -1,5 +1,5 @@
 import React from "react";
-import FormatPrice from "../Helpers/FormatPrice";
+import FormatPrice from "../../Helpers/FormatPrice";
 import styled from "styled-components";
 const FeatureProductCard = (curElem) => {
   const { id, name, image, price, type, stock } = curElem;

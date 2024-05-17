@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useFilterContext } from "../context/filter_context";
+import { useFilterContext } from "../../context/filter_context";
 const FilterSection = () => {
   const {
     filters: { text, category },

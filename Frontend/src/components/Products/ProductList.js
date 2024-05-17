@@ -1,5 +1,5 @@
 import React from "react";
-import { useFilterContext } from "../context/filter_context";
+import { useFilterContext } from "../../context/filter_context";
 import Product from "./Product";
 import styled from "styled-components";
 const ProductList = () => {

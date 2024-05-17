@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner1 from '../assets/Banner1.jpg'
-import Banner2 from '../assets/Banner2.jpg'
+import Banner1 from '../../assets/Banner1.jpg'
+import Banner2 from '../../assets/Banner2.jpg'
 import Slider from 'react-slick'
 import styled from 'styled-components'
 import "slick-carousel/slick/slick.css";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button } from "../styles/Button";
-import { useCartContext } from "../context/cart_context";
+import { Button } from "../../styles/Button";
+import { useCartContext } from "../../context/cart_context";
 import CartAmountToggle from "./CartAmountToggle";
 
 const AddToCart = ({ product }) => {

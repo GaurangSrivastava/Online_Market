@@ -3,18 +3,15 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgMenu, CgClose } from "react-icons/cg";
-import { useCartContext } from "../context/cart_context";
+import { useCartContext } from "../../context/cart_context";
 import { useEffect } from "react";
 import axios from "axios";
-import { useUserContext } from "../context/user_context";
+import { useUserContext } from "../../context/user_context";
 import img1 from "../assets/user-icon.png"
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
-  const [totalItem, setTotalItem] = useState(0);
-  //const [userId, setUserId] = useState(localStorage.getItem("userId"));
   const { cartCount, setCartCount } = useCartContext();
-  //const [profile, setProfile] = useState("");
   const { userId, setUserId, profile, setProfile } = useUserContext();
   useEffect(() => {
     const fetchData = async () => {
@@ -210,6 +207,15 @@ const Nav = () => {
               onClick={() => setMenuIcon(false)}
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/chatbot"
+              className="navbar-link "
+              onClick={() => setMenuIcon(false)}
+            >
+              Chatbot
             </NavLink>
           </li>
           <li>

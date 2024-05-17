@@ -1,6 +1,6 @@
-import FeatureProduct from "./components/FeatureProduct";
-import HeroSection from "./components/HeroSection";
-import Services from "./components/Services";
+import FeatureProduct from "./components/Home/FeatureProduct";
+import HeroSection from "./components/Home/HeroSection";
+import Services from "./components/Footer/Services";
 
 
 const Home = () => {

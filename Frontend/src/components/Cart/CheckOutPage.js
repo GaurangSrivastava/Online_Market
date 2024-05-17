@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import axios from "axios";
-import { useCartContext } from '../context/cart_context';
+import { useCartContext } from '../../context/cart_context';
 import { useNavigate } from 'react-router-dom';
 import styled from "styled-components";
 import { CardNumberElement, CardExpiryElement, CardCvcElement } from "@stripe/react-stripe-js";

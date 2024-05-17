@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import FilterSection from "./components/FilterSection";
-import ProductList from "./components/ProductList";
-import BannerSlider from "./components/BannerSlider";
+import FilterSection from "./components/Products/FilterSection";
+import ProductList from "./components/Products/ProductList";
+import BannerSlider from "./components/Products/BannerSlider";
 //mport { useFilterContext } from "./context/filter_context";
 
 const Products = () => {

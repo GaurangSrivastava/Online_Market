@@ -1,12 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import FormatPrice from "../Helpers/FormatPrice";
+import FormatPrice from "../../Helpers/FormatPrice";
 import styled from "styled-components";
-import { useCartContext } from "../context/cart_context";
+import { useCartContext } from "../../context/cart_context";
 const Product = (curElem) => {
   const { _id, name, image, price, type, stock } = curElem;
-  //const [qty, setQty] = useState(1);
   const userId = localStorage.getItem("userId");
   const [isHovered, setIsHovered] = useState(false);
   const [addedToCart, setAddedToCart] = useState(false);
@@ -36,6 +35,14 @@ const Product = (curElem) => {
         console.log(data);
       } catch (error) {
         console.log(error);
+      }
+    }
+    else{
+      try{
+        alert("Please Login or Signup first")
+      }
+      catch(error){
+        console.log(error)
       }
     }
   };

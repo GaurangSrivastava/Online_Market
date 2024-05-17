@@ -1,18 +1,13 @@
-import { useProductContext } from "../context/productcontex";
+import { useProductContext } from "../../context/productcontex";
 import styled from "styled-components";
-import img1 from "../assets/Features/potato.jpg";
-import img2 from "../assets/Features/tomato.jpg";
-import img3 from "../assets/Features/capcicum.jpg";
+import img1 from "../../assets/Features/potato.jpg";
+import img2 from "../../assets/Features/tomato.jpg";
+import img3 from "../../assets/Features/capcicum.jpg";
 import FeatureProductCard from "./FeatureProductCard";
 
 const FeatureProduct = () => {
   const { isLoading, featureProducts } = useProductContext();
 
-  if (isLoading) {
-    return <div> ......Loading </div>;
-  }
-
-  //id, name, image, price, type
   const featureProduct = [
     {
       id: 1,
