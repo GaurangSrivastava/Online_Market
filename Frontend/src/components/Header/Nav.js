@@ -7,7 +7,7 @@ import { useCartContext } from "../../context/cart_context";
 import { useEffect } from "react";
 import axios from "axios";
 import { useUserContext } from "../../context/user_context";
-import img1 from "../assets/user-icon.png"
+import img1 from "../../assets/user-icon.png"
 
 const Nav = () => {
   const [menuIcon, setMenuIcon] = useState();
